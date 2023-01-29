@@ -20,7 +20,9 @@ jobs:
     - name: Present Dic
       run: pwd
     - name: List all Files 
-      run: ls -lart
+      run: ls -lart 
+    - name: Parent Dir
+      run: ls -lart ../.
     - name: Build Docker Image
       run: docker build . --file Dockerfile --tag akash2004u/mediasoup-node:latest
     - name: DockerHub Push
